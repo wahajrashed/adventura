@@ -36,5 +36,5 @@ AdventuraApp: Main class for running the application. Provides a menu-driven int
 Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or create a pull request.
 
-License
+
 This project is licensed under the MIT License.
