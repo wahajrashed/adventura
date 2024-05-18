@@ -1,20 +1,18 @@
 Adventura - A Travel Companion App
 Adventura is a Java application designed to manage users and places. It provides a simple interface for users to add themselves, specify their preferences, add places they want to visit, and match with other users based on their preferences.
 
-Getting Started
+
 To get started with Adventura, follow these steps:
 
-Clone the repository to your local machine:
-
-bash
-Copy code
+1.Clone the repository to your local machine:
 git clone https://github.com/wahajrashed/adventura.git
 
-Open the project in your preferred Java IDE.
+2.Open the project in your preferred Java IDE.
 
-Compile and run the AdventuraApp class.
+3.Compile and run the AdventuraApp class.
 
-Usage
+Usage:
+
 Adventura provides the following features:
 
 Adding Users: Users can be added to the system by providing their name, age, and preference.
@@ -23,7 +21,8 @@ Matching Users: Users can be matched based on their preferences to find common i
 Displaying Places: All places stored in the system can be displayed along with their details.
 To use these features, simply follow the prompts in the application's menu-driven interface.
 
-Classes
+Classes:
+
 The Adventura application consists of the following classes:
 
 Place: Represents a generic place with attributes like name, location, and type.
