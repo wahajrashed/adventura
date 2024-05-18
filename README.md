@@ -8,7 +8,7 @@ Clone the repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/yourusername/adventura.git
+git clone https://github.com/wahajrashed/adventura.git
 
 Open the project in your preferred Java IDE.
 
