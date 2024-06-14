@@ -1,6 +1,6 @@
 // Concrete class implementing MatchService
 class MatchServiceImpl implements MatchService {
-
+    // Method to connect two users based on their preferences
     @Override
     public void connectUsers(User user1, User user2) {
         if (user1 == null || user2 == null) {
