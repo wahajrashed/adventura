@@ -187,7 +187,7 @@ class Adventura {
     }
 
     private void saveUsers() {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(USERS_FILE))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("users.dat"))) {
             oos.writeObject(users);
         } catch (IOException e) {
             e.printStackTrace();
@@ -195,7 +195,7 @@ class Adventura {
     }
 
     private void savePlaces() {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(PLACES_FILE))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("places.dat"))) {
             oos.writeObject(places);
         } catch (IOException e) {
             e.printStackTrace();
@@ -203,7 +203,7 @@ class Adventura {
     }
 
     private void loadUsers() {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(USERS_FILE))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("users.dat"))) {
             users = (List<User>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -211,7 +211,7 @@ class Adventura {
     }
 
     private void loadPlaces() {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(PLACES_FILE))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("places.dat"))) {
             places = (List<Place>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -552,7 +552,7 @@ public class AdventuraApp {
     }
 
     private static void loadAccounts() {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ACCOUNTS_FILE))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("accounts.dat"))) {
             accounts = (Map<String, String>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -560,7 +560,7 @@ public class AdventuraApp {
     }
 
     private static void saveAccounts() {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(ACCOUNTS_FILE))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("accounts.dat"))) {
             oos.writeObject(accounts);
         } catch (IOException e) {
             e.printStackTrace();
