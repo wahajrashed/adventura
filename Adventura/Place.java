@@ -1,12 +1,12 @@
-import java.util.List;
+import java.io.Serializable;
 
 // Abstract class representing a Place (Event or Sightseeing)
-abstract class Place {
+abstract class Place implements Serializable {
     protected String name;
     protected String location;
-    protected String type; // e.g., "Event", "Sightseeing"
+    protected String type;
 
-    // Constructor
+    // Constructor to initialize the Place with name, location, and type
     public Place(String name, String location, String type) {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name cannot be null or empty");
@@ -22,6 +22,6 @@ abstract class Place {
         this.type = type;
     }
 
-    // Abstract method to display place details
+    // Abstract method to display details of the place
     public abstract void displayDetails();
 }
