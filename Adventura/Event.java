@@ -2,7 +2,7 @@
 class Event extends Place {
     private String date;
 
-    // Constructor
+    // Constructor to initialize the Event with name, location, and date
     public Event(String name, String location, String date) {
         super(name, location, "Event");
         if (date == null || date.isEmpty()) {
@@ -11,6 +11,7 @@ class Event extends Place {
         this.date = date;
     }
 
+    // Overridden method to display details of the Event
     @Override
     public void displayDetails() {
         System.out.println("Event: " + name);
