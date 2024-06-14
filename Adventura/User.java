@@ -1,10 +1,12 @@
+import java.io.Serializable;
+
 // Class representing a User
-class User {
+class User implements Serializable {
     private String name;
     private int age;
-    private String preference; // e.g., "Adventure", "Relaxation", "Culture"
+    private String preference;
 
-    // Constructor
+    // Constructor to initialize the User with name, age, and preference
     public User(String name, int age, String preference) {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name cannot be null or empty");
@@ -20,19 +22,22 @@ class User {
         this.preference = preference;
     }
 
-    // Getters
+    // Getter for name
     public String getName() {
         return name;
     }
 
+    // Getter for age
     public int getAge() {
         return age;
     }
 
+    // Getter for preference
     public String getPreference() {
         return preference;
     }
 
+    // Overridden toString method to return a string representation of the User
     @Override
     public String toString() {
         return "User{" +
